@@ -6,7 +6,7 @@ current_dir = os.getcwd()
 print(f"Current working directory: {current_dir}")
 
 # Specify the correct path to your JSON file
-file_path = 'data.json'  # Update this if your file is in a different location
+file_path = 'q-vercel-python.json'  # Update this if your file is in a different location
 
 try:
     # Read the JSON file
