@@ -27,8 +27,8 @@ try:
     @app.route('/api', methods=['GET'])
     def get_marks():
         names = request.args.getlist('name')
-        marks = [next((item['marks'] for item in data if item['name'] == name), 0) for name in names]
-        return jsonify({"marks": marks})
+        #marks = [next((item['marks'] for item in data if item['name'] == name), 0) for name in names]
+        return jsonify({"marks": names[0]})
 
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' was not found.")
