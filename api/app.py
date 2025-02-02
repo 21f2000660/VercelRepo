@@ -39,4 +39,4 @@ async def get_marks(names: List[str] = Query(..., alias="name")):
         match = next((item for item in data if item["name"] == name), None)
         marks.append(match["marks"] if match else 0)
     
-    return {"marks": names}
+    return {"marks": marks}
